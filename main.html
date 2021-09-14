@@ -142,7 +142,7 @@
         <section>
           <div class="section">
             <div class="container">
-              <h3 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>研究所に侵入せよ！</h3>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>研究所に侵入せよ！</h2>
               <p class="text-center">過去にいくことができた！<br>
                 顔をあげてみると研究所のような場所があった<br>
                 すると研究所の職員だと思われる男たちが研究所の中に入っていくのが見えた<br>
@@ -154,7 +154,7 @@
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
-              <h3 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h3>
+              <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
               <div class="row">
 
                 <!-- STAGE3-1　ここから -->
@@ -195,32 +195,145 @@
 
       <!-- STAGE4　ここから -->
       <div v-if="next['stage3']" id="sectionStage4" class="stage">
+        <section>
+          <div class="section">
+            <div class="container">
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>研究所に侵入せよ！</h2>
+              <p class="text-center">過去にいくことができた！<br>
+                顔をあげてみると研究所のような場所があった<br>
+                すると研究所の職員だと思われる男たちが研究所の中に入っていくのが見えた<br>
+                背中のロゴがAIが暴走したときに表示されていたロゴと同じだったことに気づき<br>
+                この研究所が黒幕だと確信した<br>
+                研究所の入り口には謎が表示されているモニター、そしてパスワードを入力するためのキーボード<br>
+                この謎を解くことで、きっと次のステップに繋がるはずだ！</p>
+            </div>
+          </div>
+          <div class="stage-column__container section bg-color--keycolor">
+            <div class="container">
+              <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>キーワードを入力</h2>
+              <div class="row">
 
-        <!-- STAGE4-1問題セクション　ここから -->
+                <!-- STAGE4-1　ここから -->
+                <div class="column">
+                  <!-- STAGE4-1問題セクション　ここから -->
+                  <figure class="image__container">
+                    <img src="assets/images/無題のプレゼンテーション (4).jpg" alt="">
+                  </figure>
+                  <!-- STAGE4-1問題セクション　ここまで -->
+                  <!-- STAGE4-1解答入力セクション　ここから -->
+                  <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1)"></answer-input>
+                  <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
+                  <!-- STAGE4-1解答入力セクション　ここまで -->
+                </div><!-- /.column -->
+                <!-- STAGE4-1　ここまで -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STAGE4クリア画面　ここから -->
+        <section v-if="clear['stage4']" v-bind:class="{isClear:clear['stage4']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">STAGE：4　クリア！</div>
+              <div class="clear-message__content">無事に研究所に侵入できた！<br>
+                どうにかして<br>
+                研究所の陰謀を阻止しよう！</div>
+                <button v-on:click="nextStage('stage4')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE4クリア画面　ここまで -->
+      </div>
+      <!-- STAGE4　ここまで -->
+
+
+
+      <!-- STAGE5　ここから -->
+      <div v-if="next['stage4']" id="sectionStage5" class="stage">
+        <section>
+          <div class="section">
+            <div class="container">
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：5</span>研究所に侵入せよ！</h2>
+              <p class="text-center">過去にいくことができた！<br>
+                顔をあげてみると研究所のような場所があった<br>
+                すると研究所の職員だと思われる男たちが研究所の中に入っていくのが見えた<br>
+                背中のロゴがAIが暴走したときに表示されていたロゴと同じだったことに気づき<br>
+                この研究所が黒幕だと確信した<br>
+                研究所の入り口には謎が表示されているモニター、そしてパスワードを入力するためのキーボード<br>
+                この謎を解くことで、きっと次のステップに繋がるはずだ！</p>
+            </div>
+          </div>
+          <div class="stage-column__container section bg-color--keycolor">
+            <div class="container">
+              <h2 class="section-title"><span class="section-title__stage">STAGE：5</span>キーワードを入力</h2>
+              <div class="row">
+
+                <!-- STAGE5-1　ここから -->
+                <div class="column">
+                  <!-- STAGE5-1問題セクション　ここから -->
+                  <figure class="image__container">
+                    <img src="assets/images/無題のプレゼンテーション (5).jpg" alt="">
+                  </figure>
+                  <!-- STAGE5-1問題セクション　ここまで -->
+                  <!-- STAGE5-1解答入力セクション　ここから -->
+                  <answer-input v-bind:correct="correctAnswer['stage5']['q1']" v-on:answer-input="answerInput($event, 'stage5', 1)"></answer-input>
+                  <a class="link-hint" href="hint5.html" target="hint5">ヒントをみる ></a>
+                  <!-- STAGE5-1解答入力セクション　ここまで -->
+                </div><!-- /.column -->
+                <!-- STAGE5-1　ここまで -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STAGE5クリア画面　ここから -->
+        <section v-if="clear['stage5']" v-bind:class="{isClear:clear['stage5']}"  class="section section--clear bg-color--gray">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">STAGE：5　クリア！</div>
+              <div class="clear-message__content">無事に研究所に侵入できた！<br>
+                どうにかして<br>
+                研究所の陰謀を阻止しよう！</div>
+                <button v-on:click="nextStage('stage5')" onclick="location.href='#sectionStage5'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+            </div>
+          </div>
+        </section>
+        <!-- STAGE5クリア画面　ここまで -->
+      </div>
+      <!-- STAGE5　ここまで -->
+
+
+
+      <!-- STAGE6　ここから -->
+      <div v-if="next['stage5']" id="sectionStage6" class="stage">
+
+        <!-- STAGE6-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>研究所の自爆装置を作動させろ！</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：6</span>研究所の自爆装置を作動させろ！</h2>
             <p class="text-center">運よく侵入してすぐに自爆装置のような物が目に入ってきた<br>
               研究所の陰謀を止めるためにはこれしかない！<br>
               自爆装置を起動させるために謎を解こう！</p>
             <figure class="image__container">
-              <img src="assets/images/無題のプレゼンテーション (4).jpg" alt="">
+              <img src="assets/images/無題のプレゼンテーション (6).jpg" alt="">
             </figure>
           </div>
         </section>
-        <!-- STAGE4-1問題セクション　ここまで -->
+        <!-- STAGE6-1問題セクション　ここまで -->
 
-        <!-- STAGE4-1解答入力セクションここから -->
+        <!-- STAGE6-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>キーワードを入力</h2>
-            <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1, 'final')"></answer-input>
-            <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：6</span>キーワードを入力</h2>
+            <answer-input v-bind:correct="correctAnswer['stage6']['q1']" v-on:answer-input="answerInput($event, 'stage6', 1, 'final')"></answer-input>
+            <a class="link-hint" href="hint6.html" target="hint6">ヒントをみる ></a>
           </div>
         </section>
-        <!-- STAGE4-1解答入力セクション　ここまで -->
+        <!-- STAGE6-1解答入力セクション　ここまで -->
       </div>
-      <!-- STAGE4　ここまで -->
+      <!-- STAGE6　ここまで -->
+
 
     </div>
   </main>
