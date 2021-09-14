@@ -67,7 +67,7 @@
               <div class="clear-message__title">STAGE：１  クリア！</div>
               <div class="clear-message__content">
                 さぁ未来を変えるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+                ここからある謎にも怯まず挑戦しよう！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -125,8 +125,8 @@
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
               <div class="clear-message__content">無事に研究所に侵入できた！<br>
-                どうにかして<br>
-                研究所の陰謀を阻止しよう！</div>
+                情報が必要だ<br>
+                研究所の陰謀を阻止するためには研究所を探索しよう！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -142,13 +142,12 @@
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>研究所に侵入せよ！</h2>
-              <p class="text-center">過去にいくことができた！<br>
-                顔をあげてみると研究所のような場所があった<br>
-                すると研究所の職員だと思われる男たちが研究所の中に入っていくのが見えた<br>
-                背中のロゴがAIが暴走したときに表示されていたロゴと同じだったことに気づき<br>
-                この研究所が黒幕だと確信した<br>
-                研究所の入り口には謎が表示されているモニター、そしてパスワードを入力するためのキーボード<br>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>研究所内を調査しよう！</h2>
+              <p class="text-center">無事に研究所に侵入できた！<br>
+                研究所内には警備員がおらず人影も少ない<br>
+                そのまま奥の方に進むと保管庫と書いてある扉が見えてきた。</p>
+                「この扉の向こうに何かあるかもしれない」と思い扉を開けようとしたところ</p>
+            　　　　　　　　ロックが掛かっているようだ</p>
                 この謎を解くことで、きっと次のステップに繋がるはずだ！</p>
             </div>
           </div>
@@ -180,9 +179,9 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：3　クリア！</div>
-              <div class="clear-message__content">無事に研究所に侵入できた！<br>
-                どうにかして<br>
-                研究所の陰謀を阻止しよう！</div>
+              <div class="clear-message__content">扉が開いた！<br>
+                この部屋の中に何かあるかもしれない<br>
+                何か探してみよう</div>
                 <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -198,14 +197,15 @@
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>研究所に侵入せよ！</h2>
-              <p class="text-center">過去にいくことができた！<br>
-                顔をあげてみると研究所のような場所があった<br>
-                すると研究所の職員だと思われる男たちが研究所の中に入っていくのが見えた<br>
-                背中のロゴがAIが暴走したときに表示されていたロゴと同じだったことに気づき<br>
-                この研究所が黒幕だと確信した<br>
-                研究所の入り口には謎が表示されているモニター、そしてパスワードを入力するためのキーボード<br>
-                この謎を解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>爆破の準備</h2>
+              <p class="text-center">部屋の中には大量の爆弾が置いてあった<br>
+                この爆弾を研究所に配置し爆発すれば計画は崩れる</p>
+                そして何より今この研究所には人が少なくおそらく配置は用意であろう</p>
+            　　　　　　　　ただ、一つ問題があった、</p>
+          　　　　　　　　　　　　それは、爆弾の操作の仕方がわからないのだ！</p>
+        　　　　　　　　　　　　　　　　そう思いながら爆弾を手に取ると、タイマーのところに、こう表示された</p>
+  　　　　　　　　　　　　　　　　　　　　　　　　　　　　「ロックを解除してくだい」と
+                このロックを解くことで、きっと次のステップに繋がるはずだ！</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -236,9 +236,9 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：4　クリア！</div>
-              <div class="clear-message__content">無事に研究所に侵入できた！<br>
-                どうにかして<br>
-                研究所の陰謀を阻止しよう！</div>
+              <div class="clear-message__content">無事にロックを解除することができた<br>
+                そこには操作方法も書いてあるぞ！<br>
+                これで爆弾を設置することができる</div>
                 <button v-on:click="nextStage('stage4')" onclick="location.href='#sectionStage5'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -254,13 +254,10 @@
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：5</span>研究所に侵入せよ！</h2>
-              <p class="text-center">過去にいくことができた！<br>
-                顔をあげてみると研究所のような場所があった<br>
-                すると研究所の職員だと思われる男たちが研究所の中に入っていくのが見えた<br>
-                背中のロゴがAIが暴走したときに表示されていたロゴと同じだったことに気づき<br>
-                この研究所が黒幕だと確信した<br>
-                研究所の入り口には謎が表示されているモニター、そしてパスワードを入力するためのキーボード<br>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：5</span>爆弾を設置しよう！</h2>
+              <p class="text-center"><br>
+                爆弾の操作の仕方がわかったので早速配置に取り掛かろう<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　と思った
                 この謎を解くことで、きっと次のステップに繋がるはずだ！</p>
             </div>
           </div>
