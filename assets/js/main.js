@@ -37,7 +37,7 @@ const app = Vue.createApp({
           q1: '未来',
         },
         stage6: {
-          q1: 'かかか',
+          q1: '2050',
         }
       },
 
